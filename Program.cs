@@ -89,12 +89,12 @@ namespace Revisao
                     case "4": 
                         Console.WriteLine("Digite o nome do aluno: ");
                         var alunoPesquisado = Console.ReadLine();
-
+                        
                         foreach (var al in alunos)
                         {
-                            if(al.Equals(alunoPesquisado))
+                            if(alunoPesquisado.Equals(al.Nome))
                             {
-                                Console.WriteLine(al);
+                                Console.WriteLine($"Aluno encontrado: {al.Nome} NOTA: {al.Nota}");
                             }
                             
                         }
