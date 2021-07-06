@@ -96,10 +96,7 @@ namespace Revisao
                             {
                                 Console.WriteLine(al);
                             }
-                            else
-                            {
-                                Console.WriteLine("Aluno não existe");
-                            }
+                            
                         }
 
                         break;
