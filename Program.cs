@@ -86,6 +86,23 @@ namespace Revisao
                         Console.WriteLine($"MÉDIA GERAL: {mediaGeral} - CONCEITO: {conceitoGeral}");
 
                         break;
+                    case "4": 
+                        Console.WriteLine("Digite o nome do aluno: ");
+                        var alunoPesquisado = Console.ReadLine();
+
+                        foreach (var al in alunos)
+                        {
+                            if(al.Equals(alunoPesquisado))
+                            {
+                                Console.WriteLine(al);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Aluno não existe");
+                            }
+                        }
+
+                        break;
                     default:
                         throw new ArgumentOutOfRangeException();
                 }
@@ -103,6 +120,7 @@ namespace Revisao
                 Console.WriteLine("1 - Inserir novo aluno");
                 Console.WriteLine("2 - Listar alunos");
                 Console.WriteLine("3 - Calcular média geral");
+                Console.WriteLine("4 - Pesquisar aluno");
                 Console.WriteLine("X - Sair");
                 Console.WriteLine();
 
